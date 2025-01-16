@@ -3,46 +3,34 @@
    <body class="main-layout inner_page">
       <!-- loader  -->
       <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
+         <div class="loader"><img src="/images/loading.gif" alt="#"/></div>
       </div>
       <!-- end loader -->
      
          <!-- header -->
          <%- include("partials/_menu") %>
-         <!-- end header inner -->
-      <!-- contact -->
-        <div class="contact">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 ">
-                <div class="titlepage text_align_center">
-                  
-                  <h2>Login</h2>
-                </div>
+      <!-- end header inner -->
+      <div class="customers">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="titlepage text_align_center">
+                
+               <h2>Welcome <%= user.username %></h2>
               </div>
-              <div class="col-md-8 offset-md-2">
-                <form id="request" class="main_form" action="users/login" method="POST">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <input class="form_control" placeholder="Username" type="text" name="username"> 
-                    </div>
-                    
-                    <div class="col-md-12">
-                      <input class="form_control" placeholder="Password" type="password" name="password">                          
-                    </div>
-                    <div class="col-md-12">
-                      <div class="group_form">
-                        <button class="send_btn">Login</button>
-                      
-                      </div>
-                    </div>
-                  </div>
-                </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="satteb text_align_center">
+                <p>fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that itfact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that itfact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that itfact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it</p>
+                <h3>The point of using </h3>
+                <i><img src="/images/custo.jpg" alt="#"/></i>
               </div>
             </div>
           </div>
         </div>
-      <!-- end contact -->
+      </div>
       <!-- end footer -->
       <footer>
          <div class="footer">
@@ -51,19 +39,19 @@
                         <div class="col-md-12">
                               <ul class="menu_footer">
                                  <li><a href="index.html">Home</a></li>
-                                 <li><a href="about.html">About</a></li>
+                                 <li><a class="active" href="about.html">About</a></li>
                                  <li><a href="services.html">Services</a></li>
                                  <li><a href="gallery.html">Gallery</a></li>
                                  <li><a href="projects.html">Projects</a></li>
                                  <li><a href="blog.html">Blog</a></li>
-                                 <li><a class="active" href="contact.html">Contact</a></li>
+                                 <li><a href="contact.html">Contact</a></li>
                               </ul>
                         </div>
                         <div class="col-md-12">
                           <ul class="top_infomation">
-                            <li><a href="javascript:void(0)"><i><img src="images/loc.png" alt="#"/></i></a></li>
-                            <li><a href="javascript:void(0)"><i><img src="images/call.png" alt="#"/></i></a></li>      
-                            <li><a href="javascript:void(0)"><i><img src="images/mail.png" alt="#"/></i></a></li>   
+                            <li><a href="javascript:void(0)"><i><img src="/images/loc.png" alt="#"/></i></a></li>
+                            <li><a href="javascript:void(0)"><i><img src="/images/call.png" alt="#"/></i></a></li>      
+                            <li><a href="javascript:void(0)"><i><img src="/images/mail.png" alt="#"/></i></a></li>   
                               </ul>
                         </div>
                </div>
@@ -88,12 +76,12 @@
       </footer>
       <!-- end footer -->
       <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
+      <script src="/js/jquery.min.js"></script>
+      <script src="/js/bootstrap.bundle.min.js"></script>
+      <script src="/js/jquery-3.0.0.min.js"></script>
+      <script src="/js/owl.carousel.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-      <script src="js/custom.js"></script>
+      <script src="/js/custom.js"></script>
         <script type="text/javascript">
          baguetteBox.run('.tz-gallery');
       </script>

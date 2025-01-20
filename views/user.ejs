@@ -3,14 +3,42 @@
    <body class="main-layout inner_page">
       <!-- loader  -->
       <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
+         <div class="loader"><img src="/images/loading.gif" alt="#"/></div>
       </div>
       <!-- end loader -->
      
          <!-- header -->
          <%- include("partials/_menu") %>
-         <!-- end header inner -->
-      <!-- gallery -->
+      <!-- end header inner -->
+      <div class="customers">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="titlepage text_align_center">
+                
+               <h2>Welcome <%= user.username %></h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="satteb text_align_center">
+                <p>fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that itfact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that itfact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that itfact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it</p>
+                <h3>The point of using </h3>
+                <i><img src="/images/custo.jpg" alt="#"/></i>
+              </div>
+            </div>
+          </div>
+
+
+          
+
+
+        </div>
+      </div>
+
+
+
       <div class="gallery">
          <div class="container_with">
             <div class="row">
@@ -27,10 +55,10 @@
                      <div class="row">
                         <div class="col-lg-4 col-md-6 ma_bottom30">
                            <div class="lightbox">
-                              <img src="<%= photo.url %>" alt="<%= photo.name %>">
+                              <img src="<%= photo.url %>" alt="<%= photo.url %>">
                               <div class="view_main">
                                 <div class="pose">
-                                <a class="read_more" href="/photos/<%= photo._id %>"><img src="images/ga.png" alt="#"/></a>
+                                <a class="read_more" href="/photos/<%= photo._id %>"><img src="/images/ga.png" alt="#"/></a>
                                 <h3 style="padding-top:10px; padding-bottom:10px;">
                                  <%= photo.name %>
                                 </h3>
@@ -53,7 +81,11 @@
             </div>
          </div>
       </div>
-      <!-- end gallery -->
+
+
+      
+
+
       <!-- end footer -->
       <footer>
          <div class="footer">
@@ -62,9 +94,9 @@
                         <div class="col-md-12">
                               <ul class="menu_footer">
                                  <li><a href="index.html">Home</a></li>
-                                 <li><a href="about.html">About</a></li>
+                                 <li><a class="active" href="about.html">About</a></li>
                                  <li><a href="services.html">Services</a></li>
-                                 <li><a class="active" href="gallery.html">Gallery</a></li>
+                                 <li><a href="gallery.html">Gallery</a></li>
                                  <li><a href="projects.html">Projects</a></li>
                                  <li><a href="blog.html">Blog</a></li>
                                  <li><a href="contact.html">Contact</a></li>
@@ -72,9 +104,9 @@
                         </div>
                         <div class="col-md-12">
                           <ul class="top_infomation">
-                            <li><a href="javascript:void(0)"><i><img src="images/loc.png" alt="#"/></i></a></li>
-                            <li><a href="javascript:void(0)"><i><img src="images/call.png" alt="#"/></i></a></li>      
-                            <li><a href="javascript:void(0)"><i><img src="images/mail.png" alt="#"/></i></a></li>   
+                            <li><a href="javascript:void(0)"><i><img src="/images/loc.png" alt="#"/></i></a></li>
+                            <li><a href="javascript:void(0)"><i><img src="/images/call.png" alt="#"/></i></a></li>      
+                            <li><a href="javascript:void(0)"><i><img src="/images/mail.png" alt="#"/></i></a></li>   
                               </ul>
                         </div>
                </div>
@@ -99,12 +131,12 @@
       </footer>
       <!-- end footer -->
       <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
+      <script src="/js/jquery.min.js"></script>
+      <script src="/js/bootstrap.bundle.min.js"></script>
+      <script src="/js/jquery-3.0.0.min.js"></script>
+      <script src="/js/owl.carousel.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-      <script src="js/custom.js"></script>
+      <script src="/js/custom.js"></script>
         <script type="text/javascript">
          baguetteBox.run('.tz-gallery');
       </script>

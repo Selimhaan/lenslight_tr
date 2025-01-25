@@ -21,6 +21,8 @@
             <a class="read_more" href="/users/<%= photo.user._id %>"
               ><%= photo.user.username %></a
             >
+
+            <% if (isOwner) { %>
             <div style="margin-top: 30px">
               <ul style="display: flex; justify-content: space-between">
                 <li>
@@ -46,6 +48,7 @@
                 </li>
               </ul>
             </div>
+            <% } %>
           </div>
         </div>
         <div class="col-md-6">
